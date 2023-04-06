@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pengatran text running</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    form {border: 3px solid #f1f1f1;}
+    .option{
+      width: 100%;
+      padding: 12px 20px;
+        margin: 8px 0;
+       display: inline-block;
+      border: 1px solid #ccc;
+     box-sizing: border-box;
+    }
+    h3{
+      text-align: center;
+      color: black;
+    }
+    input[type=text], input[type=password],input[type=number] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+    button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 20px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    button:hover {
+      opacity: 0.8;
+    }
+    
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+    
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+    }
+    
+    img.avatar {
+      width: 40%;
+      border-radius: 50%;
+    }
+    
+    .container {
+      padding: 66px;
+    }
+    
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+    
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+         display: block;
+         float: none;
+      }
+      .cancelbtn {
+         width: 100%;
+      }
+    }
+    </style>
+    </head>
+<body>
+
+<h3>Pengatran Text running</h3>
+
+<!-- <FORM METHOD="POST"action="/"> -->
+<form id="txt_form" name="frmText" method="post">
+  <div class="container">
+maskan text<input type="text" name="myText" ><br>
+atur kecerahan 1-15<input type="number" name="kecerahan" ><br>
+pilih kecepatan 1-100 <input type="text" name="kecepatan" ></br>
+pilih efek
+<select name="efek" id="efk" class="option">
+  <option value="1">PA_NO_EFFECT </option>
+  <option value="2">PA_PRINT </option>
+  <option value="3">PA_SCROLL_UP </option>
+  <option value="4">PA_SCROLL_LEFT  </option>
+  <option value="5">PA_SCROLL_RIGHT  </option>
+  <option value="6">PA_SPRITE  </option>
+  <option value="7">PA_SLICE  </option>
+  <option value="8">PA_MESH </option>
+  <option value="9">PA_FADE </option>
+  <option value="10">PA_DISSOLVE  </option>
+  <option value="11">PA_BLINDS  </option>
+  <option value="12">PA_RANDOM </option>
+  <option value="13">PA_WIPE  </option>
+  <option value="14">PA_WIPE_CURSOR  </option>
+</select>
+
+<form>
+
+<button onclick="myFunction()"> Tekan </button>
+<h3>Aplikasi web server pengaturan text running V1.0 @Copyright Riski sihab</h3>
+</div>
+<p id="demo"></p>
+
+<script>
+var x;
+function myFunction() {
+   var eID = document.getElementById("efk");
+     p = eID.options[eID.selectedIndex].value;
+     x = document.getElementById("myText").value
+     y = document.getElementById("kecerahan").value 
+     z = document.getElementById("kecerahan").value 
+     
+   nocache = \"/&nocache=\" + Math.random() * 1000000;
+   var request = new XMLHttpRequest();"
+   request.open("GET",+ p + x + y + z + a + nocache, false);
+   request.send(null);" 
+     
+}
+
+</script>
+</FORM>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:uno",
+    "sketch": "belajar_eeprom.ino",
+    "port": "/dev/ttyACM0"
+}

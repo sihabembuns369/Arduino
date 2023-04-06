@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    form {border: 3px solid #f1f1f1;}
+    
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    .inp {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    h3{
+      text-align: center;
+      color: black;
+    }
+    
+    button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    button:hover {
+      opacity: 0.8;
+    }
+    
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+    
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+    }
+    
+    img.avatar {
+      width: 40%;
+      border-radius: 50%;
+    }
+    
+    .container {
+      padding: 30px;
+    }
+    
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+    
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+         display: block;
+         float: none;
+      }
+      .cancelbtn {
+         width: 100%;
+      }
+    }
+    </style>
+    </head>
+<h3>Pengaturan text running </h3>
+
+<form id="txt_form" name="frmText">
+<div class="imgcontainer">
+maskan text<input type="text" name="myText" ><br>
+atur kecerahan 1-255<input type="number" name="kecerahan" class="inp" ><br>
+atur kecepatan <input type="number" name="kecepatan"  class="inp"></br>
+pilih efek
+<select name="efek" id="efk"  class="inp">
+  <option value="1">tebal </option>
+  <option value="2">tipis</option>
+  <option value="3">text elektrik</option>
+</select>
+
+
+<form>
+<button onclick="myFunction()"> TEKAN </button>
+<h3>Aplikasi web server pengaturan text running V1.0 @Copyright Riski sihab</h3>
+</div>
+<p id="demo"></p>
+
+<script>
+var x;
+function myFunction() {
+     var eID = document.getElementById("efk");
+     p = eID.options[eID.selectedIndex].value;
+     x = document.getElementById("myText").value
+     y = document.getElementById("kecerahan").value 
+     z = document.getElementById("kecepatan").value 
+//     a = document.getElementById("efek").value 
+     
+   nocache = \"/&nocache=\" + Math.random() * 1000000;
+   var request = new XMLHttpRequest();"
+   request.open("GET", + p + x + y + z  + nocache, false);
+   request.send(null);" 
+     
+}
+
+</script>
+</body>
+</html>

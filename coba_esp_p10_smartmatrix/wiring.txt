@@ -1,0 +1,15 @@
+ WIRING
+    ------
+    P10         ESP32
+    A           5
+    B           18
+    C           19
+    CLK         22
+    LAT/SCLK    26
+    R           2
+    OE          25
+    GND         GND
+    RTC
+    ---
+    SDA         32
+    SCL         33
