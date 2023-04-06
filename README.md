@@ -1,12 +1,7 @@
-echo "# Arduino" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/sihabembuns369/Arduino.git
-git push -u origin main
+# File ini Adalah Backupan Projeck Projek Selama belajar
 
-…or push an existing repository from the command line
-git remote add origin https://github.com/sihabembuns369/Arduino.git
-git branch -M main
-git push -u origin main
+Untuk mengunduh
+
+```
+git clone https://github.com/sihabembuns369/Arduino.git
+```
